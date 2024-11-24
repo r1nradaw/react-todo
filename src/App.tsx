@@ -55,7 +55,7 @@ function App() {
     <>
       <div className="h-screen w-screen">
         <div className="h-full w-full flex items-center justify-center">
-          <div className="w-[650px] border-2 border-gray-200 rounded-lg p-10 flex flex-col gap-2">
+          <div className="w-[650px] border-2 border-gray-200 rounded-lg px-8 pb-10 pt-8 flex flex-col gap-2">
             <div className="flex justify-between items-baseline mb-5">
               <span className="text-2xl font-semibold">Todo List</span>
               {todoListArray.length > 0 && (
@@ -69,10 +69,10 @@ function App() {
               )}
             </div>
             <div>
-              <div className="flex gap-2">
+              <div className="flex gap-2 pb-1">
                 <input
                   type="text"
-                  className="w-full h-[50px] border-2 border-gray-200 rounded-lg"
+                  className="w-full h-[50px] border-2 border-gray-200 rounded-lg pl-3"
                   value={todoInput}
                   onChange={(value) => {
                     console.log(value.target.value);
